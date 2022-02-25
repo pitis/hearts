@@ -42,63 +42,56 @@ font = ImageFont.truetype('PixelOperator.ttf', 16)
 def drawAnimation():
     current_frame = 0
 
-    if(current_frame == 0):
-        draw.text((40, 16), "Te iubesc", font=font, fill=255)
-        draw.text((30, 32), "cel mai mult", font=font, fill=255)
-        time.sleep(1.5)
-    if(current_frame == 1):
-        heart1 = Image.open('heart1.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
-    if(current_frame == 2):
-        heart1 = Image.open('heart2.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
-    if(current_frame == 3):
-        heart1 = Image.open('heart3.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
-    if(current_frame == 4):
-        heart1 = Image.open('heart4.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
-    if(current_frame == 5):
-        heart1 = Image.open('heart5.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
-    if(current_frame == 6):
-        heart1 = Image.open('heart6.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
-    if(current_frame == 7):
-        heart1 = Image.open('heart7.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
-    if(current_frame == 8):
-        heart1 = Image.open('heart8.jpg').convert('1')
-        heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
-        oled.image(heart1)
-        oled.show()
-        time.sleep(0.3)
+    while True:
+        if(current_frame == 0):
+            draw.text((40, 16), "Te iubesc", font=font, fill=255)
+            draw.text((30, 32), "cel mai mult", font=font, fill=255)
+            time.sleep(1.5)
+        if(current_frame == 1):
+            heart1 = Image.open('heart1.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 2):
+            heart1 = Image.open('heart2.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 3):
+            heart1 = Image.open('heart3.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 4):
+            heart1 = Image.open('heart4.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 5):
+            heart1 = Image.open('heart5.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 6):
+            heart1 = Image.open('heart6.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 7):
+            heart1 = Image.open('heart7.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 8):
+            heart1 = Image.open('heart8.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
 
-    current_frame = current_frame + 1
+        current_frame = current_frame + 1
 
-    if(current_frame > 15):
-        current_frame = 0
+        if(current_frame > 15):
+            current_frame = 0
 
 
 while True:
