@@ -50,4 +50,6 @@ while True:
     # Display image
     oled.image(image)
     oled.show()
+    heart1 = Image.open('heart1.gif')
+    oled.show()
     time.sleep(.1)
