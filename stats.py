@@ -95,6 +95,11 @@ def drawAnimation():
         oled.show()
         time.sleep(0.3)
 
+    current_frame = current_frame + 1
+
+    if(current_frame > 15):
+        current_frame = 0
+
 
 while True:
 
