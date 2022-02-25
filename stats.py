@@ -99,9 +99,6 @@ while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
 
-    drawAnimation()
-    # Display image
     oled.image(image)
     oled.show()
-
-    time.sleep(.1)
+    drawAnimation()
