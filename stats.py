@@ -46,6 +46,7 @@ def drawAnimation():
         if(current_frame == 0):
             draw.text((40, 16), "Te iubesc", font=font, fill=255)
             draw.text((30, 32), "cel mai mult", font=font, fill=255)
+            oled.show()
             time.sleep(1.5)
         if(current_frame == 1):
             heart1 = Image.open('heart1.jpg').convert('1')
@@ -87,10 +88,45 @@ def drawAnimation():
             oled.image(heart1)
             oled.show()
             time.sleep(0.5)
+        if(current_frame == 9):
+            heart1 = Image.open('heart7.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 10):
+            heart1 = Image.open('heart6.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 11):
+            heart1 = Image.open('heart5.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 12):
+            heart1 = Image.open('heart4.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 13):
+            heart1 = Image.open('heart3.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 14):
+            heart1 = Image.open('heart2.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
+        if(current_frame == 15):
+            heart1 = Image.open('heart1.jpg').convert('1')
+            oled.image(heart1)
+            oled.show()
+            time.sleep(0.5)
 
         current_frame = current_frame + 1
 
-        if(current_frame > 8):
+        if(current_frame > 15):
             current_frame = 0
 
 
