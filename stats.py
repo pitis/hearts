@@ -90,7 +90,7 @@ def drawAnimation():
 
         current_frame = current_frame + 1
 
-        if(current_frame > 15):
+        if(current_frame > 8):
             current_frame = 0
 
 
