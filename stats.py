@@ -50,12 +50,9 @@ while True:
     # Display image
     oled.image(image)
     oled.show()
-    bg = Image.new('RGB', (128, 64), 0)
-
     heart1 = Image.open('heart1.gif').convert('1')
-    bg.paste(heart1, (0, 0))
-    bg.save('heart1.png')
+    heart1.resize((128, 64))
 
-    oled.image(Image.open('heart1.png').convert('1'))
+    oled.image(heart1)
     oled.show()
     time.sleep(.1)
