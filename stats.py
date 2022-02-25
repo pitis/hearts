@@ -50,7 +50,7 @@ while True:
     # Display image
     oled.image(image)
     oled.show()
-    heart1 = Image.open('heart1.pbm').convert('1')
+    heart1 = Image.open('heart1.gif').convert('1')
     heart1 = heart1.resize((128, 64), Image.ANTIALIAS)
 
     oled.image(heart1)
