@@ -51,7 +51,7 @@ while True:
     oled.image(image)
     oled.show()
     heart1 = Image.open('heart1.gif').convert('1')
-    heart1.resize((128, 64))
+    heart1.resize((128, 64), Image.ANTIALIAS)
 
     oled.image(heart1)
     oled.show()
