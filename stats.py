@@ -47,6 +47,7 @@ def drawAnimation():
         if(current_frame == 0):
             draw.text((40, 16), "Te iubesc", font=font, fill=255)
             draw.text((30, 32), "cel mai mult", font=font, fill=255)
+            oled.image(image)
             oled.show()
             time.sleep(1.5)
         if(current_frame == 1):
