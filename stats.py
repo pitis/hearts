@@ -41,10 +41,10 @@ font = ImageFont.truetype('PixelOperator.ttf', 16)
 
 def drawAnimation():
     current_frame = 0
+    draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
 
     while True:
         if(current_frame == 0):
-            draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
             draw.text((40, 16), "Te iubesc", font=font, fill=255)
             draw.text((30, 32), "cel mai mult", font=font, fill=255)
             oled.show()
@@ -53,77 +53,77 @@ def drawAnimation():
             heart1 = Image.open('heart1.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 2):
             heart1 = Image.open('heart2.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 3):
             heart1 = Image.open('heart3.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 4):
             heart1 = Image.open('heart4.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 5):
             heart1 = Image.open('heart5.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 6):
             heart1 = Image.open('heart6.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 7):
             heart1 = Image.open('heart7.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 8):
             heart1 = Image.open('heart8.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 9):
             heart1 = Image.open('heart7.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 10):
             heart1 = Image.open('heart6.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 11):
             heart1 = Image.open('heart5.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 12):
             heart1 = Image.open('heart4.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 13):
             heart1 = Image.open('heart3.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 14):
             heart1 = Image.open('heart2.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
         if(current_frame == 15):
             heart1 = Image.open('heart1.jpg').convert('1')
             oled.image(heart1)
             oled.show()
-            time.sleep(0.2)
+            time.sleep(0.1)
 
         current_frame = current_frame + 1
 
