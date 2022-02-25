@@ -44,6 +44,7 @@ def drawAnimation():
 
     while True:
         if(current_frame == 0):
+            draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
             draw.text((40, 16), "Te iubesc", font=font, fill=255)
             draw.text((30, 32), "cel mai mult", font=font, fill=255)
             oled.show()
@@ -133,7 +134,6 @@ def drawAnimation():
 while True:
 
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
 
     oled.image(image)
     oled.show()
