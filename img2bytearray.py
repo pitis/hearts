@@ -8,7 +8,7 @@ if len(sys.argv) > 1:
     y = int(sys.argv[3])
 
     im = Image.open(path_to_image).convert('1')
-    im_resize = im.resize((x, y))
+    im_resize = im.resize((x,y))
     buf = BytesIO()
     im_resize.save(buf, 'ppm')
     byte_im = buf.getvalue()
